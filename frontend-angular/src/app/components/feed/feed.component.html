@@ -1,10 +1,13 @@
-<div class="feed-container">
-  <h1>Últimas noticias RSS</h1>
-  <div *ngFor="let entry of entries" class="feed-entry">
-    <h2>{{ entry.title }}</h2>
+<div class="feed-container" *ngIf="entries.length > 0; else loading">
+  <div *ngFor="let entry of entries" class="feed-card">
+    <h3>{{ entry.title }}</h3>
+    <img *ngIf="entry.image" [src]="entry.image" alt="Feed image" />
     <p [innerHTML]="entry.description"></p>
+    <small>{{ entry.pubDate }}</small><br>
     <a [href]="entry.link" target="_blank">Leer más</a>
-    <p class="pub-date">{{ entry.pubDate }}</p>
-    <img *ngIf="entry.image" [src]="entry.image" alt="Imagen" />
   </div>
 </div>
+
+<ng-template #loading>
+  <p>Cargando entradas...</p>
+</ng-template>

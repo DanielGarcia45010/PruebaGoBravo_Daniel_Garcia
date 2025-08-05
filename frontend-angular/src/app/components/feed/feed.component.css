@@ -1,0 +1,41 @@
+
+.feed-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.feed-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.feed-entry.visited .entry-title {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.entry-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.entry-title:hover {
+  text-decoration: underline;
+}
+
+.entry-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.image-preview img {
+  max-height: 150px;
+  width: auto;
+  border-radius: 4px;
+}

@@ -3,11 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { FeedEntry } from '../models/feed-entry.model';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root'
+})
 export class FeedService {
-  private apiUrl = '/entries.json';
+  private jsonUrl = '/entries.json';
+
   constructor(private http: HttpClient) {}
-  getFeedEntries(): Observable<FeedEntry[]> {
-    return this.http.get<FeedEntry[]>(this.apiUrl);
+
+  getFeed(): Observable<FeedEntry[]> {
+    return this.http.get<FeedEntry[]>(this.jsonUrl);
   }
 }

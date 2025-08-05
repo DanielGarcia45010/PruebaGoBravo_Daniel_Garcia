@@ -1,16 +1,20 @@
-<div *ngFor="let entry of entries" class="feed-entry" [class.visited]="entry.visited">
-  <h2>
-    <a [href]="entry.link" target="_blank" (click)="entry.visited = true">
-      {{ entry.title }}
-    </a>
-  </h2>
+<div class="feed-container">
+  <div class="entry" *ngFor="let entry of entries" (click)="entry.expanded = !entry.expanded">
+    <h3>
+      <a [href]="entry.link" target="_blank" (click)="entry.visited = true" [class.visited]="entry.visited">
+        {{ entry.title }}
+      </a>
+    </h3>
 
-  <p *ngIf="!entry.expanded" (click)="entry.expanded = true" style="cursor: pointer;">
-    {{ stripHtml(entry.description).split('\n')[0] | slice:0:200 }}...
-  </p>
+    <div class="entry-content">
+      <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
+      <p class="entry-summary">
+        {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
+      </p>
+    </div>
 
-  <div *ngIf="entry.expanded" [innerHTML]="entry.description"></div>
-
-  <small>{{ entry.pubDate }}</small>
-  <hr />
+    <div *ngIf="entry.expanded" class="entry-full">
+      <div [innerHTML]="entry.description"></div>
+    </div>
+  </div>
 </div>

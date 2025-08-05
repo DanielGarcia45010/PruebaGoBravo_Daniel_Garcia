@@ -1,20 +1,53 @@
-.feed-entry {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem;
-  cursor: pointer;
+.feed-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.feed-entry.visited h3 {
+.entry {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.entry:hover {
+  background-color: #f9f9f9;
+}
+
+.entry h3 a {
+  color: #007acc;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.entry h3 a.visited {
   color: gray;
   text-decoration: line-through;
 }
 
-.entry-body {
+.entry-content {
   display: flex;
-  gap: 1rem;
+  gap: 15px;
+  align-items: flex-start;
 }
 
-.entry-image img {
+.entry-image {
   max-height: 150px;
-  object-fit: cover;
+  border-radius: 5px;
+}
+
+.entry-summary {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.entry-full {
+  margin-top: 10px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
 }

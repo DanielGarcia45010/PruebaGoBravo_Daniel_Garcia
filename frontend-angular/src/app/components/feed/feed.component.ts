@@ -14,17 +14,22 @@ export class FeedComponent implements OnInit {
   constructor(private feedService: FeedService) {}
 
   ngOnInit(): void {
-    this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
+  this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
   this.entries = data
     .map(entry => {
+     
       const parser = new DOMParser();
-      const htmlDoc = parser.parseFromString(entry.description || '', 'text/html');
-      const textContent = htmlDoc.body.textContent || '';
-      const summary = textContent.trim().slice(0, 250); 
+      const doc = parser.parseFromString(entry.description || '', 'text/html');
+      const textContent = doc.body.textContent?.trim() || '';
+      const summary = textContent.slice(0, 200); 
+
+      const imgEl = doc.querySelector('img');
+      const image = imgEl ? imgEl.src : null;
 
       return {
         ...entry,
-        summary: summary || entry.title, 
+        summary,
+        image,
         visited: false,
         expanded: false
       };

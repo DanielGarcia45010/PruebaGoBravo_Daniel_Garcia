@@ -15,6 +15,6 @@ public class RssJob {
 
     @Scheduled(fixedRate = 86400000)
     public void runJob() {
-        rssAggregatorService.generateJsonFeed();
+        rssAggregatorService.fetchAndStoreFeeds();
     }
 }

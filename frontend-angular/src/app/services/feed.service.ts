@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 export class FeedService {
   constructor(private http: HttpClient) {}
 
-  getEntries(): Observable<any> {
-    return this.http.get('/api/entries.json');
-  }
+  getEntries(): Observable<FeedEntry[]> {
+  return this.http.get<FeedEntry[]>('http://localhost:8080/api/entries.json');
+}
 }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FeedService } from 'src/app/services/feed.service';
-import { FeedEntry } from 'src/app/models/feed-entry.model';
+import { FeedService } from '../../services/feed.service';
+import { FeedEntry } from '../../models/feed-entry.model';
+
 
 @Component({
   selector: 'app-feed',

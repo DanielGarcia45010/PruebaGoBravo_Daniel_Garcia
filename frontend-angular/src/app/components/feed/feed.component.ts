@@ -15,14 +15,22 @@ export class FeedComponent implements OnInit {
 
   ngOnInit(): void {
     this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
-      this.entries = data
-        .map(entry => ({
-          ...entry,
-          visited: false,
-          expanded: false
-        }))
-        .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-    });
+  this.entries = data
+    .map(entry => {
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(entry.description || '', 'text/html');
+      const textContent = htmlDoc.body.textContent || '';
+      const summary = textContent.trim().slice(0, 250); 
+
+      return {
+        ...entry,
+        summary: summary || entry.title, 
+        visited: false,
+        expanded: false
+      };
+    })
+    .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+});
   }
 
   stripHtml(html: string): string {

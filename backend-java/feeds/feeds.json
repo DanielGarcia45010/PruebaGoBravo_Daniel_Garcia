@@ -1,0 +1,7 @@
+{
+  "feeds": [
+    "https://dev.to/feed/tag/javascript",
+    "https://hnrss.org/newest",
+    "https://www.genbeta.com/feedburner.xml"
+  ]
+}

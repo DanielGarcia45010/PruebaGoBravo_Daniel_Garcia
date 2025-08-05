@@ -1,12 +1,10 @@
-<div style="padding: 1rem;">
-  <h1 style="text-align: center;">📰 Aggregated RSS Feed</h1>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem;">
-    <div *ngFor="let entry of entries" style="background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem;">
-      <img *ngIf="entry.image" [src]="entry.image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;" />
-      <h3>{{entry.title}}</h3>
-      <p style="font-size: 0.8rem; color: grey;">{{entry.pubDate}}</p>
-      <div [innerHTML]="entry.description"></div>
-      <a [href]="entry.link" target="_blank" style="display: block; margin-top: 1rem; color: blue;">Leer más →</a>
-    </div>
+<div class="feed-container">
+  <h1>Últimas noticias RSS</h1>
+  <div *ngFor="let entry of entries" class="feed-entry">
+    <h2>{{ entry.title }}</h2>
+    <p [innerHTML]="entry.description"></p>
+    <a [href]="entry.link" target="_blank">Leer más</a>
+    <p class="pub-date">{{ entry.pubDate }}</p>
+    <img *ngIf="entry.image" [src]="entry.image" alt="Imagen" />
   </div>
 </div>

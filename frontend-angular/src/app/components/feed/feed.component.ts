@@ -1,6 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FeedService } from '../../services/feed.service';
-import { FeedEntry } from '../../models/feed-entry.model';
+
+interface FeedEntry {
+  title: string;
+  link: string;
+  contentSnippet: string;
+  content: string;
+  isoDate: string;
+  image?: string;
+  expanded?: boolean;
+  visited?: boolean;
+}
 
 @Component({
   selector: 'app-feed',
@@ -9,27 +19,35 @@ import { FeedEntry } from '../../models/feed-entry.model';
 })
 export class FeedComponent implements OnInit {
   entries: FeedEntry[] = [];
-  expandedEntry: FeedEntry | null = null;
-  visitedLinks = new Set<string>();
 
   constructor(private feedService: FeedService) {}
 
-  ngOnInit(): void {
-    this.feedService.getFeedEntries().subscribe(data => {
-      this.entries = data.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-    });
-  }
+ ngOnInit(): void {
+  this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
+    this.entries = data
+      .map(entry => ({
+        ...entry,
+        visited: false,
+        expanded: false
+      }))
+      .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+  });
+}
+
 
   toggleContent(entry: FeedEntry): void {
-    this.expandedEntry = this.expandedEntry === entry ? null : entry;
+    entry.expanded = !entry.expanded;
   }
 
-  markAsVisited(link: string): void {
-    this.visitedLinks.add(link);
+  markAsVisited(entry: FeedEntry): void {
+    entry.visited = true;
   }
 
-  isVisited(link: string): boolean {
-    return this.visitedLinks.has(link);
-  }
+  stripHtml(html: string): string {
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || '';
+}
+
 }
 

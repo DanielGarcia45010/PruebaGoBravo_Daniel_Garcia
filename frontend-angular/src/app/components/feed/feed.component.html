@@ -15,7 +15,11 @@
       <div *ngIf="entry.imageUrl" class="image-preview">
         <img [src]="entry.imageUrl" alt="Preview" />
       </div>
+
+      <!-- Mostrar resumen si no está expandido -->
       <p *ngIf="expandedEntry !== entry">{{ entry.contentSnippet }}</p>
+
+      <!-- Mostrar contenido completo si está expandido -->
       <div *ngIf="expandedEntry === entry" [innerHTML]="entry.content"></div>
     </div>
   </div>

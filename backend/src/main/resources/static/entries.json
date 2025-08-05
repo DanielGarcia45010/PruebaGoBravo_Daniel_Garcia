@@ -1,135 +1,135 @@
 [
   {
+    "link": "https://www.wsj.com/health/healthcare/colon-cancer-screening-young-adults-5900a8a6",
+    "description": "\n<p>Article URL: <a href=\"https://www.wsj.com/health/healthcare/colon-cancer-screening-young-adults-5900a8a6\">https://www.wsj.com/health/healthcare/colon-cancer-screening-young-adults-5900a8a6<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804702\">https://news.ycombinator.com/item?id=44804702<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 1<\/p>\n",
+    "title": "A Turning Point in Colon Cancer: Young People Are Finding It Earlier",
+    "pubDate": "Tue Aug 05 21:38:30 UTC 2025"
+  },
+  {
+    "link": "https://jacobin.com/2025/07/demography-fertility-population-crisis-longtermism/",
+    "description": "\n<p>Article URL: <a href=\"https://jacobin.com/2025/07/demography-fertility-population-crisis-longtermism/\">https://jacobin.com/2025/07/demography-fertility-population-crisis-longtermism/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804644\">https://news.ycombinator.com/item?id=44804644<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Why Should We Worry About Declining Birth Rates?",
+    "pubDate": "Tue Aug 05 21:33:09 UTC 2025"
+  },
+  {
+    "link": "https://blog.brokk.ai/a-first-look-at-gpt-oss-120bs-coding-ability/",
+    "description": "\n<p>Article URL: <a href=\"https://blog.brokk.ai/a-first-look-at-gpt-oss-120bs-coding-ability/\">https://blog.brokk.ai/a-first-look-at-gpt-oss-120bs-coding-ability/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804640\">https://news.ycombinator.com/item?id=44804640<\/a><\/p>\n<p>Points: 3<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "A first look at GPT-OSS-120B's coding ability",
+    "pubDate": "Tue Aug 05 21:33:03 UTC 2025"
+  },
+  {
+    "link": "https://xpander.ai/2025/03/31/how-xpander-ai-embraces-the-model-context-protocol-in-practice-an-engineering-deep-dive/",
+    "description": "\n<p>Article URL: <a href=\"https://xpander.ai/2025/03/31/how-xpander-ai-embraces-the-model-context-protocol-in-practice-an-engineering-deep-dive/\">https://xpander.ai/2025/03/31/how-xpander-ai-embraces-the-model-context-protocol-in-practice-an-engineering-deep-dive/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804580\">https://news.ycombinator.com/item?id=44804580<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Embracing the Model Context Protocol in practice: An engineering deep-dive",
+    "pubDate": "Tue Aug 05 21:27:51 UTC 2025"
+  },
+  {
+    "link": "https://zenodo.org/records/15867575",
+    "description": "\n<p>Article URL: <a href=\"https://zenodo.org/records/15867575\">https://zenodo.org/records/15867575<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804578\">https://news.ycombinator.com/item?id=44804578<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 1<\/p>\n",
+    "title": "AGI Blueprint - 424 pages\u2013 Visual Thought AGI Link",
+    "pubDate": "Tue Aug 05 21:27:48 UTC 2025"
+  },
+  {
+    "link": "https://torrentfreak.com/canadian-court-rejects-reverse-class-action-lawsuit-against-bittorrent-pirates/",
+    "description": "\n<p>Article URL: <a href=\"https://torrentfreak.com/canadian-court-rejects-reverse-class-action-lawsuit-against-bittorrent-pirates/\">https://torrentfreak.com/canadian-court-rejects-reverse-class-action-lawsuit-against-bittorrent-pirates/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804568\">https://news.ycombinator.com/item?id=44804568<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Canadian Court Rejects Reverse Class Action Lawsuit Against BitTorrent Pirates",
+    "pubDate": "Tue Aug 05 21:27:02 UTC 2025"
+  },
+  {
+    "link": "https://news.ycombinator.com/item?id=44804553",
+    "description": "\n<p>In various places, it was alleged that uBlock Origin will no longer work in Chrome 139 as that is when Manifest v2 will be removed.<p>I just upgraded to 139.0.7258.67, and uBlock Origin 1.65.0 is working as always.<p>With 138, I reconfigured Chrome to force Manifest v2 to continue working. But even Google's guidance (https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline) suggests that for 138, Manifest V2 is \"disabled\" and \"Users can no longer turn them back on.\" For 139, for enterprise users, \"the ExtensionManifestV2Availability policy will be removed\", further clarified with \"Manifest V2 extensions will cease to function for any user upgrading to Chrome 139\".<p>Did something change?<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804553\">https://news.ycombinator.com/item?id=44804553<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "uBlock Origin still works in Chrome 139",
+    "pubDate": "Tue Aug 05 21:26:14 UTC 2025"
+  },
+  {
+    "link": "https://news.ycombinator.com/item?id=44804541",
+    "description": "\n<p>Not long ago, building with zero-knowledge proofs felt like assembling a 10,000-piece puzzle blindfolded. Developers burned months wrestling with arcane cryptographic libraries, and scaling solutions for real-world use cases seemed out of reach.<p>Now, platforms like Succinct are simplifying the process, but the ecosystem\u2019s growing pains are still evident. The recent $PROVE token launch listed on BingX at $2, now up 335%, has sparked the usual mix of excitement and frustration. Many airdrop hunters are upset about allocations, while others miss out entirely.<p>I'm not chasing the first green candle. Instead, I'm researching the underlying tech, waiting for a better entry after the hype dies down, and questioning whether airdrops still incentivize builders or just attract mercenary capital.<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804541\">https://news.ycombinator.com/item?id=44804541<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "ZK Proofs Are Getting Easier but the Airdrop Game Remains Tricky",
+    "pubDate": "Tue Aug 05 21:24:37 UTC 2025"
+  },
+  {
+    "link": "https://thenewstack.io/user-interfaces-in-agentic-cli-tools-what-developers-need/",
+    "description": "\n<p>Article URL: <a href=\"https://thenewstack.io/user-interfaces-in-agentic-cli-tools-what-developers-need/\">https://thenewstack.io/user-interfaces-in-agentic-cli-tools-what-developers-need/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804530\">https://news.ycombinator.com/item?id=44804530<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "User Interfaces in Agentic CLI Tools: What Developers Need",
+    "pubDate": "Tue Aug 05 21:23:48 UTC 2025"
+  },
+  {
+    "link": "https://splits.org/blog/writing-culture/",
+    "description": "\n<p>Article URL: <a href=\"https://splits.org/blog/writing-culture/\">https://splits.org/blog/writing-culture/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804524\">https://news.ycombinator.com/item?id=44804524<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Writing culture",
+    "pubDate": "Tue Aug 05 21:23:35 UTC 2025"
+  },
+  {
+    "link": "https://www.mentalfloss.com/animals/fish/why-hammerheads-love-eating-sharks",
+    "description": "\n<p>Article URL: <a href=\"https://www.mentalfloss.com/animals/fish/why-hammerheads-love-eating-sharks\">https://www.mentalfloss.com/animals/fish/why-hammerheads-love-eating-sharks<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804503\">https://news.ycombinator.com/item?id=44804503<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Hammer Time: Scientists Have Figured Out Why Hammerheads Love Eating Other Shark",
+    "pubDate": "Tue Aug 05 21:22:14 UTC 2025"
+  },
+  {
+    "link": "https://spin.atomicobject.com/points-in-agile/",
+    "description": "\n<p>Article URL: <a href=\"https://spin.atomicobject.com/points-in-agile/\">https://spin.atomicobject.com/points-in-agile/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804487\">https://news.ycombinator.com/item?id=44804487<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "What's the \"Points\" of Agile, Anyway?",
+    "pubDate": "Tue Aug 05 21:20:56 UTC 2025"
+  },
+  {
+    "link": "https://nypost.com/2025/08/04/media/start-the-presses-new-york-post-will-expand-to-la-with-launch-of-the-california-post/",
+    "description": "\n<p>Article URL: <a href=\"https://nypost.com/2025/08/04/media/start-the-presses-new-york-post-will-expand-to-la-with-launch-of-the-california-post/\">https://nypost.com/2025/08/04/media/start-the-presses-new-york-post-will-expand-to-la-with-launch-of-the-california-post/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804479\">https://news.ycombinator.com/item?id=44804479<\/a><\/p>\n<p>Points: 3<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "The New York Post Is Expanding to LA, Launching the California Post Next Year",
+    "pubDate": "Tue Aug 05 21:20:17 UTC 2025"
+  },
+  {
+    "link": "https://leaddev.com/velocity/writing-code-was-never-the-bottleneck",
+    "description": "\n<p>Article URL: <a href=\"https://leaddev.com/velocity/writing-code-was-never-the-bottleneck\">https://leaddev.com/velocity/writing-code-was-never-the-bottleneck<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804469\">https://news.ycombinator.com/item?id=44804469<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 1<\/p>\n",
+    "title": "Writing code was never the bottleneck",
+    "pubDate": "Tue Aug 05 21:19:38 UTC 2025"
+  },
+  {
+    "link": "https://mitte.ai",
+    "description": "\n<p>Article URL: <a href=\"https://mitte.ai\">https://mitte.ai<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804461\">https://news.ycombinator.com/item?id=44804461<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Show HN: I made a playground and editor for generative AI models",
+    "pubDate": "Tue Aug 05 21:18:58 UTC 2025"
+  },
+  {
+    "link": "https://www.neowin.net/news/kde-plasma-65-finally-gets-a-feature-people-have-wanted-for-a-long-time/",
+    "description": "\n<p>Article URL: <a href=\"https://www.neowin.net/news/kde-plasma-65-finally-gets-a-feature-people-have-wanted-for-a-long-time/\">https://www.neowin.net/news/kde-plasma-65-finally-gets-a-feature-people-have-wanted-for-a-long-time/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804438\">https://news.ycombinator.com/item?id=44804438<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "KDE Plasma 6.5 gets a feature people have wanted for a long time",
+    "pubDate": "Tue Aug 05 21:17:21 UTC 2025"
+  },
+  {
+    "link": "https://spin.atomicobject.com/build-knowledge-base-cursor/",
+    "description": "\n<p>Article URL: <a href=\"https://spin.atomicobject.com/build-knowledge-base-cursor/\">https://spin.atomicobject.com/build-knowledge-base-cursor/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804429\">https://news.ycombinator.com/item?id=44804429<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Tame Software Complexity with AI: Use Cursor to Build a Smarter Knowledge Base",
+    "pubDate": "Tue Aug 05 21:16:25 UTC 2025"
+  },
+  {
+    "link": "https://blog.google/products/gemini/storybooks/",
+    "description": "\n<p>Article URL: <a href=\"https://blog.google/products/gemini/storybooks/\">https://blog.google/products/gemini/storybooks/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804411\">https://news.ycombinator.com/item?id=44804411<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "Create personal illustrated storybooks in the Gemini app",
+    "pubDate": "Tue Aug 05 21:14:49 UTC 2025"
+  },
+  {
+    "link": "https://substack.com/home/post/p-169458733",
+    "description": "\n<p>Article URL: <a href=\"https://substack.com/home/post/p-169458733\">https://substack.com/home/post/p-169458733<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804393\">https://news.ycombinator.com/item?id=44804393<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 1<\/p>\n",
+    "title": "Orchestrating Agents",
+    "pubDate": "Tue Aug 05 21:13:02 UTC 2025"
+  },
+  {
+    "link": "https://status.1password.com",
+    "description": "\n<p>Article URL: <a href=\"https://status.1password.com\">https://status.1password.com<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804392\">https://news.ycombinator.com/item?id=44804392<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
+    "title": "1Password Sign in Outage",
+    "pubDate": "Tue Aug 05 21:13:01 UTC 2025"
+  },
+  {
     "link": "https://dev.to/march_pilot_f657af98ce680/building-a-fence-monitoring-system-using-python-feo",
     "description": "<p>Security and property maintenance go hand-in-hand. Whether you own a rural property, a suburban home, or a commercial space, monitoring the condition and activity around your fence can help prevent intrusions, damage, or costly repairs.<br><br>\nFor property owners with a <strong><em><a href=\"https://osceolafence.net/fence-company-freeport-il/\" rel=\"noopener noreferrer\">vinyl fence in chicago \u200bin Freeport<\/a><\/em><\/strong>, implementing a smart monitoring system ensures peace of mind and adds a layer of automation to your security strategy.<\/p>\n\n<p>In this guide, we\u2019ll explore how to build a basic fence monitoring system using Python, sensors, and IoT technology.<\/p>\n\n<p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4r5flwz1opj5qvq4yq7b.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4r5flwz1opj5qvq4yq7b.png\" alt=\" \" width=\"800\" height=\"800\"><\/a><\/p>\n\n\n<h2>\n  \n  \n  Why Fence Monitoring Matters\n<\/h2>\n\n<p>Fences\u2014whether they are decorative or functional\u2014serve as the first line of defense for your property. For those with a <strong><em><a href=\"https://osceolafence.net/fence-company-freeport-il/\" rel=\"noopener noreferrer\">wrought iron fence Freeport il<\/a><\/em><\/strong>, real-time monitoring can detect:<\/p>\n\n<ul>\n<li>Unusual vibrations or impacts<\/li>\n<li>Opening or tampering with gates<\/li>\n<li>Structural issues caused by weather or wear<\/li>\n<li>Unauthorized climbing attempts<\/li>\n<\/ul>\n\n<p>These alerts can be sent directly to your phone, allowing you to respond immediately.<\/p>\n\n\n<h2>\n  \n  \n  Components Needed\n<\/h2>\n\n<p>To build your fence monitoring system, you\u2019ll need:<\/p>\n\n<ul>\n<li>\n<strong>Raspberry Pi<\/strong> or similar microcontroller<\/li>\n<li>\n<strong>Vibration sensors<\/strong> (piezoelectric or accelerometers)<\/li>\n<li>\n<strong>Magnetic contact sensors<\/strong> for gates<\/li>\n<li>\n<strong>Wi-Fi or LoRa module<\/strong> for connectivity<\/li>\n<li>Python installed with <code>paho-mqtt<\/code> and <code>gpiozero<\/code>\n<\/li>\n<\/ul>\n\n\n<h2>\n  \n  \n  Python Code Example\n<\/h2>\n\n<p>Below is a simplified Python script to read from a vibration sensor and send an alert via MQTT when an unusual event occurs.<br>\n<\/p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight shell\"><code>pip <span class=\"nb\">install <\/span>paho-mqtt gpiozero\n<\/code><\/pre>\n\n<\/div>\n\n\n\n\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><code><span class=\"kn\">import<\/span> <span class=\"n\">paho.mqtt.client<\/span> <span class=\"k\">as<\/span> <span class=\"n\">mqtt<\/span>\n<span class=\"kn\">from<\/span> <span class=\"n\">gpiozero<\/span> <span class=\"kn\">import<\/span> <span class=\"n\">MotionSensor<\/span>\n<span class=\"kn\">import<\/span> <span class=\"n\">time<\/span>\n\n<span class=\"n\">BROKER<\/span> <span class=\"o\">=<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">broker.hivemq.com<\/span><span class=\"sh\">\"<\/span>\n<span class=\"n\">TOPIC<\/span> <span class=\"o\">=<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">fence/monitoring<\/span><span class=\"sh\">\"<\/span>\n<span class=\"n\">SENSOR_PIN<\/span> <span class=\"o\">=<\/span> <span class=\"mi\">4<\/span>\n\n<span class=\"n\">pir<\/span> <span class=\"o\">=<\/span> <span class=\"nc\">MotionSensor<\/span><span class=\"p\">(<\/span><span class=\"n\">SENSOR_PIN<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">def<\/span> <span class=\"nf\">on_connect<\/span><span class=\"p\">(<\/span><span class=\"n\">client<\/span><span class=\"p\">,<\/span> <span class=\"n\">userdata<\/span><span class=\"p\">,<\/span> <span class=\"n\">flags<\/span><span class=\"p\">,<\/span> <span class=\"n\">rc<\/span><span class=\"p\">):<\/span>\n    <span class=\"nf\">print<\/span><span class=\"p\">(<\/span><span class=\"sa\">f<\/span><span class=\"sh\">\"<\/span><span class=\"s\">Connected with result code <\/span><span class=\"si\">{<\/span><span class=\"n\">rc<\/span><span class=\"si\">}<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">subscribe<\/span><span class=\"p\">(<\/span><span class=\"n\">TOPIC<\/span><span class=\"p\">)<\/span>\n\n<span class=\"n\">client<\/span> <span class=\"o\">=<\/span> <span class=\"n\">mqtt<\/span><span class=\"p\">.<\/span><span class=\"nc\">Client<\/span><span class=\"p\">()<\/span>\n<span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"n\">on_connect<\/span> <span class=\"o\">=<\/span> <span class=\"n\">on_connect<\/span>\n<span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">connect<\/span><span class=\"p\">(<\/span><span class=\"n\">BROKER<\/span><span class=\"p\">,<\/span> <span class=\"mi\">1883<\/span><span class=\"p\">,<\/span> <span class=\"mi\">60<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">def<\/span> <span class=\"nf\">send_alert<\/span><span class=\"p\">(<\/span><span class=\"n\">message<\/span><span class=\"p\">):<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">publish<\/span><span class=\"p\">(<\/span><span class=\"n\">TOPIC<\/span><span class=\"p\">,<\/span> <span class=\"n\">message<\/span><span class=\"p\">)<\/span>\n    <span class=\"nf\">print<\/span><span class=\"p\">(<\/span><span class=\"sa\">f<\/span><span class=\"sh\">\"<\/span><span class=\"s\">Alert sent: <\/span><span class=\"si\">{<\/span><span class=\"n\">message<\/span><span class=\"si\">}<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">if<\/span> <span class=\"n\">__name__<\/span> <span class=\"o\">==<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">__main__<\/span><span class=\"sh\">\"<\/span><span class=\"p\">:<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">loop_start<\/span><span class=\"p\">()<\/span>\n    <span class=\"k\">while<\/span> <span class=\"bp\">True<\/span><span class=\"p\">:<\/span>\n        <span class=\"k\">if<\/span> <span class=\"n\">pir<\/span><span class=\"p\">.<\/span><span class=\"n\">motion_detected<\/span><span class=\"p\">:<\/span>\n            <span class=\"nf\">send_alert<\/span><span class=\"p\">(<\/span><span class=\"sh\">\"<\/span><span class=\"s\"> Fence disturbance detected!<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n        <span class=\"n\">time<\/span><span class=\"p\">.<\/span><span class=\"nf\">sleep<\/span><span class=\"p\">(<\/span><span class=\"mi\">1<\/span><span class=\"p\">)<\/span>\n<\/code><\/pre>\n\n<\/div>\n\n\n\n<p>This script listens for activity on the fence and sends an MQTT message to a remote dashboard or mobile notification system.<\/p>\n\n\n\n\n<h2>\n  \n  \n  Benefits of an IoT Fence Monitoring System\n<\/h2>\n\n<p>For owners with a <strong><em><a href=\"https://osceolafence.net/fence-company-freeport-il/\" rel=\"noopener noreferrer\">chain link fence Freeport<\/a><\/em><\/strong>, such a system can offer:<\/p>\n\n<ol>\n<li>\n<strong>24/7 surveillance<\/strong> without requiring cameras at every section<\/li>\n<li>\n<strong>Real-time alerts<\/strong> for quick incident response<\/li>\n<li>\n<strong>Maintenance tracking<\/strong> to detect damage early<\/li>\n<li>\n<strong>Integration<\/strong> with smart home systems<\/li>\n<\/ol>\n\n\n\n\n<h2>\n  \n  \n  Things to Consider\n<\/h2>\n\n<ul>\n<li>Ensure your sensors are weatherproof.<\/li>\n<li>Use encrypted connections for data security.<\/li>\n<li>Plan for power backup in case of outages.<\/li>\n<li>Calibrate sensors to avoid false alarms.<\/li>\n<\/ul>\n\n\n\n\n<h2>\n  \n  \n  Conclusion\n<\/h2>\n\n<p>Building a fence monitoring system using Python is cost-effective, scalable, and adaptable to different fence materials and property sizes. With a few sensors, a microcontroller, and some Python code, you can transform any fence into a smart security asset that works around the clock.<\/p>\n\n",
     "title": "Building a Fence Monitoring System Using Python",
     "pubDate": "Tue Aug 05 21:02:49 UTC 2025"
   },
   {
-    "link": "https://satellitemap.space/",
-    "description": "\n<p>Article URL: <a href=\"https://satellitemap.space/\">https://satellitemap.space/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804188\">https://news.ycombinator.com/item?id=44804188<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Satellitemap.space \u2013 Real-time satellite tracking",
-    "pubDate": "Tue Aug 05 20:58:38 UTC 2025"
-  },
-  {
-    "link": "https://www.vox.com/future-perfect/421659/foreign-aid-increase-spain-ireland-usaid",
-    "description": "\n<p>Article URL: <a href=\"https://www.vox.com/future-perfect/421659/foreign-aid-increase-spain-ireland-usaid\">https://www.vox.com/future-perfect/421659/foreign-aid-increase-spain-ireland-usaid<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804127\">https://news.ycombinator.com/item?id=44804127<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Some countries still want to save the world",
-    "pubDate": "Tue Aug 05 20:53:11 UTC 2025"
-  },
-  {
-    "link": "https://www.wsws.org/en/articles/2025/08/04/jbtf-a04.html",
-    "description": "\n<p>Article URL: <a href=\"https://www.wsws.org/en/articles/2025/08/04/jbtf-a04.html\">https://www.wsws.org/en/articles/2025/08/04/jbtf-a04.html<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804120\">https://news.ycombinator.com/item?id=44804120<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "100,000 march across Sydney Harbour Bridge demanding end to Gaza genocide",
-    "pubDate": "Tue Aug 05 20:52:33 UTC 2025"
-  },
-  {
-    "link": "https://www.space.com/astronomy/extremely-large-telescope-gets-a-roof-space-photo-of-the-day-for-august-5-2025",
-    "description": "\n<p>Article URL: <a href=\"https://www.space.com/astronomy/extremely-large-telescope-gets-a-roof-space-photo-of-the-day-for-august-5-2025\">https://www.space.com/astronomy/extremely-large-telescope-gets-a-roof-space-photo-of-the-day-for-august-5-2025<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804056\">https://news.ycombinator.com/item?id=44804056<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Extremely Large Telescope gets a roof",
-    "pubDate": "Tue Aug 05 20:47:28 UTC 2025"
-  },
-  {
-    "link": "https://byroot.github.io/ruby/json/2025/08/02/whats-wrong-with-the-json-gem-api.html",
-    "description": "\n<p>Article URL: <a href=\"https://byroot.github.io/ruby/json/2025/08/02/whats-wrong-with-the-json-gem-api.html\">https://byroot.github.io/ruby/json/2025/08/02/whats-wrong-with-the-json-gem-api.html<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804043\">https://news.ycombinator.com/item?id=44804043<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "What's wrong with the JSON gem API?",
-    "pubDate": "Tue Aug 05 20:46:38 UTC 2025"
-  },
-  {
-    "link": "https://www.productleadership.io/p/i-spent-3-months-vibe-coding-with",
-    "description": "\n<p>Article URL: <a href=\"https://www.productleadership.io/p/i-spent-3-months-vibe-coding-with\">https://www.productleadership.io/p/i-spent-3-months-vibe-coding-with<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804030\">https://news.ycombinator.com/item?id=44804030<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 2<\/p>\n",
-    "title": "Lessons from 3 months vibe coding as a non-technical PM",
-    "pubDate": "Tue Aug 05 20:45:57 UTC 2025"
-  },
-  {
-    "link": "https://iliareingold.com",
-    "description": "\n<p>Friends keep asking how I stay so unreasonably up to date on AI. Truth is: I doomscroll, but productively. I bounce between a bunch of sites, skim like a gremlin, and try to connect the dots.<p>Then I had a thought: what if I had little AI reporters do that for me?<p>So I built them. Four agents, each with a beat:<p>1) Hacker News Agent \u2014 Sniffs out top stories, Ask HN, and Show HN before they go nuclear.\n2) GitHub Agent \u2014 Tracks trending repos across every language. Finds the tools you\u2019ll pretend you discovered first.\n3) Reddit Agent \u2014 Lurks in r/Ollama, r/accelerate, r/singularity, and much more subreddits. Catches the real talk from the trenches.\n4) ArXiv Agent \u2014 Reads dense research so you don\u2019t have to. Turns \u201ctheorem 3.2\u201d into \u201chere\u2019s why this matters.\u201d<p>Then the Editor Agent steps in.\nIt merges the reports, kills duplicates, spots patterns across platforms, and spins it into a narrative that actually makes sense.<p>Result: zero fluff, maximum signal. Every morning: hand-picked stories, with quick, smart analysis on why they matter and how they connect.<p>Two weeks and many coffees later: BAAM \u2014 Ilia\u2019s Corner is alive.\nA daily newsletter powered entirely by agents.<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804010\">https://news.ycombinator.com/item?id=44804010<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Show HN: My Agentic Newsletter Project",
-    "pubDate": "Tue Aug 05 20:43:43 UTC 2025"
-  },
-  {
-    "link": "https://www.latimes.com/entertainment-arts/business/story/2025-07-25/who-wants-to-buy-a-movie-studio-now-and-why",
-    "description": "\n<p>Article URL: <a href=\"https://www.latimes.com/entertainment-arts/business/story/2025-07-25/who-wants-to-buy-a-movie-studio-now-and-why\">https://www.latimes.com/entertainment-arts/business/story/2025-07-25/who-wants-to-buy-a-movie-studio-now-and-why<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44804001\">https://news.ycombinator.com/item?id=44804001<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 2<\/p>\n",
-    "title": "Hollywood is struggling. So why does anyone want to buy a movie studio now?",
-    "pubDate": "Tue Aug 05 20:42:45 UTC 2025"
-  },
-  {
-    "link": "https://medium.com/@odin_29694/why-you-shouldnt-treat-your-database-as-an-integration-platform-01c0e88afb99",
-    "description": "\n<p>An event-first workflow that eliminates the need for Kafka and CDC by storing events as the source of truth and building read models from the event stream. Interested in feedback from the community on this approach to simplifying data architecture.<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803981\">https://news.ycombinator.com/item?id=44803981<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Show HN: Event-First Workflow That Eliminates Kafka and CDC",
-    "pubDate": "Tue Aug 05 20:41:04 UTC 2025"
-  },
-  {
-    "link": "https://herman.bearblog.dev/digital-hygiene-emails/",
-    "description": "\n<p>Article URL: <a href=\"https://herman.bearblog.dev/digital-hygiene-emails/\">https://herman.bearblog.dev/digital-hygiene-emails/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803980\">https://news.ycombinator.com/item?id=44803980<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Digital Hygiene: Emails",
-    "pubDate": "Tue Aug 05 20:41:01 UTC 2025"
-  },
-  {
-    "link": "https://www.nature.com/articles/d41586-025-02454-5",
-    "description": "\n<p>Article URL: <a href=\"https://www.nature.com/articles/d41586-025-02454-5\">https://www.nature.com/articles/d41586-025-02454-5<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803978\">https://news.ycombinator.com/item?id=44803978<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "We need a new ethics for a world of AI agents",
-    "pubDate": "Tue Aug 05 20:40:53 UTC 2025"
-  },
-  {
-    "link": "https://simonwillison.net/2025/Aug/4/chatgpt-agents-user-agent/",
-    "description": "\n<p>Article URL: <a href=\"https://simonwillison.net/2025/Aug/4/chatgpt-agents-user-agent/\">https://simonwillison.net/2025/Aug/4/chatgpt-agents-user-agent/<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803964\">https://news.ycombinator.com/item?id=44803964<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "ChatGPT agent triggers crawls from Bingbot and Yandex",
-    "pubDate": "Tue Aug 05 20:39:55 UTC 2025"
-  },
-  {
-    "link": "https://www.bradleyrhodes.com/Papers/remembrance.html",
-    "description": "\n<p>Article URL: <a href=\"https://www.bradleyrhodes.com/Papers/remembrance.html\">https://www.bradleyrhodes.com/Papers/remembrance.html<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803963\">https://news.ycombinator.com/item?id=44803963<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Remembrance Agent A continuously running automated information retrieval system",
-    "pubDate": "Tue Aug 05 20:39:53 UTC 2025"
-  },
-  {
-    "link": "https://www.minds.com/register",
-    "description": "\n<p>Article URL: <a href=\"https://www.minds.com/register\">https://www.minds.com/register<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803961\">https://news.ycombinator.com/item?id=44803961<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Good Job",
-    "pubDate": "Tue Aug 05 20:39:50 UTC 2025"
-  },
-  {
-    "link": "https://news.ycombinator.com/item?id=44803958",
-    "description": "\n<p>I'm wondering if any of the folks here were \"there\" when there were battles about this (if there ever were any). Email seems to me like a good candidate for a government-provided electronic service. Even if management were contracted out to a private entity, providing emails to all residents of a geography (city/province/state/etc.) seems like a useful thing for government to do. You could use it as an official means of communication to residents, and provide a baseline for digital presence of your citizens. Email standards are now very mature and stable (enough so for every SME to be constantly iterating on their security abstractions). Why doesn't government provided email seem to exist anywhere? Universities do it. Why not government?<p>I can speculate about all kinds of reasons that this didn't happen, but I was too young to have watched the city council meetings where this might have been discussed. Does such a thing exist in China? Finland? Norway? The Netherlands? Anywhere?<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803958\">https://news.ycombinator.com/item?id=44803958<\/a><\/p>\n<p>Points: 3<\/p>\n<p># Comments: 1<\/p>\n",
-    "title": "Ask HN: Why isn't email a government service?",
-    "pubDate": "Tue Aug 05 20:39:35 UTC 2025"
-  },
-  {
     "link": "https://dev.to/jaime_smith_cfd7d9641239c/iot-enabled-wrought-iron-gates-are-they-worth-it-776",
     "description": "<p>Homeowners and businesses are increasingly turning to <strong>smart gate solutions<\/strong> for better security, convenience, and integration with existing smart home systems. In communities where design and durability matter\u2014such as properties featuring a <strong><em><a href=\"https://osceolafence.net/fence-company-englewood-chicago-il/\" rel=\"noopener noreferrer\">wrought iron fence in Englewood<\/a><\/em><\/strong>\u2014the idea of pairing classic materials with modern IoT technology is gaining traction.<\/p>\n\n<p>But are IoT-enabled wrought iron gates truly worth the investment? Let\u2019s explore the benefits, potential drawbacks, and a sample Python script to control such gates remotely.<\/p>\n\n<p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo7fntws5gz6liaraduhb.png\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo7fntws5gz6liaraduhb.png\" alt=\" \" width=\"800\" height=\"800\"><\/a><\/p>\n\n\n\n\n<h2>\n  \n  \n  Why IoT Integration Makes Sense for Gates\n<\/h2>\n\n<p>While a traditional fence provides physical security, IoT integration allows property owners to monitor, control, and automate gate operations from anywhere.<br><br>\nFor example, someone with a <strong><em><a href=\"https://osceolafence.net/fence-company-englewood-chicago-il/\" rel=\"noopener noreferrer\">wood fence Englewood il<\/a><\/em><\/strong> property might integrate IoT to:<\/p>\n\n<ul>\n<li>Open and close gates remotely via smartphone.<\/li>\n<li>Receive real-time alerts if the gate is forced open.<\/li>\n<li>Schedule automatic lock/unlock times.<\/li>\n<li>Integrate with voice assistants like Alexa or Google Assistant.<\/li>\n<\/ul>\n\n\n<h2>\n  \n  \n  Example: Python Script to Control an IoT Gate\n<\/h2>\n\n<p>Using a Raspberry Pi and an MQTT broker, you can connect a gate motor to the cloud and control it with Python.<br>\n<\/p>\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight shell\"><code>pip <span class=\"nb\">install <\/span>paho-mqtt\n<\/code><\/pre>\n\n<\/div>\n\n\n\n\n\n<div class=\"highlight js-code-highlight\">\n<pre class=\"highlight python\"><code><span class=\"kn\">import<\/span> <span class=\"n\">paho.mqtt.client<\/span> <span class=\"k\">as<\/span> <span class=\"n\">mqtt<\/span>\n<span class=\"kn\">import<\/span> <span class=\"n\">time<\/span>\n\n<span class=\"n\">BROKER<\/span> <span class=\"o\">=<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">broker.hivemq.com<\/span><span class=\"sh\">\"<\/span>\n<span class=\"n\">TOPIC<\/span> <span class=\"o\">=<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">home/gate/control<\/span><span class=\"sh\">\"<\/span>\n\n<span class=\"k\">def<\/span> <span class=\"nf\">on_connect<\/span><span class=\"p\">(<\/span><span class=\"n\">client<\/span><span class=\"p\">,<\/span> <span class=\"n\">userdata<\/span><span class=\"p\">,<\/span> <span class=\"n\">flags<\/span><span class=\"p\">,<\/span> <span class=\"n\">rc<\/span><span class=\"p\">):<\/span>\n    <span class=\"nf\">print<\/span><span class=\"p\">(<\/span><span class=\"sa\">f<\/span><span class=\"sh\">\"<\/span><span class=\"s\">Connected with result code <\/span><span class=\"si\">{<\/span><span class=\"n\">rc<\/span><span class=\"si\">}<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">subscribe<\/span><span class=\"p\">(<\/span><span class=\"n\">TOPIC<\/span><span class=\"p\">)<\/span>\n\n<span class=\"n\">client<\/span> <span class=\"o\">=<\/span> <span class=\"n\">mqtt<\/span><span class=\"p\">.<\/span><span class=\"nc\">Client<\/span><span class=\"p\">()<\/span>\n<span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"n\">on_connect<\/span> <span class=\"o\">=<\/span> <span class=\"n\">on_connect<\/span>\n<span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">connect<\/span><span class=\"p\">(<\/span><span class=\"n\">BROKER<\/span><span class=\"p\">,<\/span> <span class=\"mi\">1883<\/span><span class=\"p\">,<\/span> <span class=\"mi\">60<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">def<\/span> <span class=\"nf\">open_gate<\/span><span class=\"p\">():<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">publish<\/span><span class=\"p\">(<\/span><span class=\"n\">TOPIC<\/span><span class=\"p\">,<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">OPEN<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n    <span class=\"nf\">print<\/span><span class=\"p\">(<\/span><span class=\"sh\">\"<\/span><span class=\"s\"> Gate opening...<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">def<\/span> <span class=\"nf\">close_gate<\/span><span class=\"p\">():<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">publish<\/span><span class=\"p\">(<\/span><span class=\"n\">TOPIC<\/span><span class=\"p\">,<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">CLOSE<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n    <span class=\"nf\">print<\/span><span class=\"p\">(<\/span><span class=\"sh\">\"<\/span><span class=\"s\"> Gate closing...<\/span><span class=\"sh\">\"<\/span><span class=\"p\">)<\/span>\n\n<span class=\"k\">if<\/span> <span class=\"n\">__name__<\/span> <span class=\"o\">==<\/span> <span class=\"sh\">\"<\/span><span class=\"s\">__main__<\/span><span class=\"sh\">\"<\/span><span class=\"p\">:<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">loop_start<\/span><span class=\"p\">()<\/span>\n    <span class=\"nf\">open_gate<\/span><span class=\"p\">()<\/span>\n    <span class=\"n\">time<\/span><span class=\"p\">.<\/span><span class=\"nf\">sleep<\/span><span class=\"p\">(<\/span><span class=\"mi\">5<\/span><span class=\"p\">)<\/span>\n    <span class=\"nf\">close_gate<\/span><span class=\"p\">()<\/span>\n    <span class=\"n\">client<\/span><span class=\"p\">.<\/span><span class=\"nf\">loop_stop<\/span><span class=\"p\">()<\/span>\n<\/code><\/pre>\n\n<\/div>\n\n\n\n<p>With this script, any MQTT-enabled gate controller can respond to the <code>OPEN<\/code> or <code>CLOSE<\/code> commands instantly.<\/p>\n\n\n\n\n<h2>\n  \n  \n  Benefits of IoT-Enabled Gates\n<\/h2>\n\n<ol>\n<li>\n<strong>Remote Management<\/strong> \u2013 Control from anywhere in the world.<\/li>\n<li>\n<strong>Integration<\/strong> \u2013 Works with existing home automation setups.<\/li>\n<li>\n<strong>Alerts &amp; Logs<\/strong> \u2013 Keep track of entry and exit events.<\/li>\n<li>\n<strong>Energy Efficiency<\/strong> \u2013 Some systems integrate with solar-powered motors.<\/li>\n<\/ol>\n\n<p>This is particularly appealing for <strong><em><a href=\"https://osceolafence.net/fence-company-englewood-chicago-il/\" rel=\"noopener noreferrer\">automatic gates Englewood<\/a><\/em><\/strong> installations where convenience and security are top priorities.<\/p>\n\n\n\n\n<h2>\n  \n  \n  Considerations Before Installing\n<\/h2>\n\n<ul>\n<li>\n<strong>Initial Costs<\/strong> \u2013 IoT integration can be more expensive upfront.<\/li>\n<li>\n<strong>Internet Dependency<\/strong> \u2013 Gate control relies on a stable network.<\/li>\n<li>\n<strong>Security<\/strong> \u2013 Must ensure encrypted connections to avoid hacking risks.<\/li>\n<li>\n<strong>Maintenance<\/strong> \u2013 IoT devices require periodic software updates.<\/li>\n<\/ul>\n\n\n\n\n<h2>\n  \n  \n  Conclusion\n<\/h2>\n\n<p>IoT-enabled wrought iron gates combine timeless durability with cutting-edge technology. They\u2019re an excellent choice for property owners who value both style and smart functionality. While the initial cost might be higher, the convenience, security, and long-term flexibility make them a worthwhile investment for many.<\/p>\n\n",
     "title": "IoT-Enabled Wrought Iron Gates: Are They Worth It?",
     "pubDate": "Tue Aug 05 20:38:52 UTC 2025"
-  },
-  {
-    "link": "https://www.bloomberg.com/news/articles/2025-08-05/snap-s-second-quarter-sales-fall-short-after-advertising-glitch",
-    "description": "\n<p>Article URL: <a href=\"https://www.bloomberg.com/news/articles/2025-08-05/snap-s-second-quarter-sales-fall-short-after-advertising-glitch\">https://www.bloomberg.com/news/articles/2025-08-05/snap-s-second-quarter-sales-fall-short-after-advertising-glitch<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803943\">https://news.ycombinator.com/item?id=44803943<\/a><\/p>\n<p>Points: 1<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Snap's Second-Quarter Sales Fall Short After Advertising Glitch",
-    "pubDate": "Tue Aug 05 20:38:21 UTC 2025"
-  },
-  {
-    "link": "https://docs.anthropic.com/en/docs/about-claude/model-deprecations",
-    "description": "\n<p>Article URL: <a href=\"https://docs.anthropic.com/en/docs/about-claude/model-deprecations\">https://docs.anthropic.com/en/docs/about-claude/model-deprecations<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803939\">https://news.ycombinator.com/item?id=44803939<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Model Deprecations",
-    "pubDate": "Tue Aug 05 20:37:54 UTC 2025"
-  },
-  {
-    "link": "https://news.sky.com/story/mystery-of-what-killed-billions-of-starfish-solved-say-scientists-13407178",
-    "description": "\n<p>Article URL: <a href=\"https://news.sky.com/story/mystery-of-what-killed-billions-of-starfish-solved-say-scientists-13407178\">https://news.sky.com/story/mystery-of-what-killed-billions-of-starfish-solved-say-scientists-13407178<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803929\">https://news.ycombinator.com/item?id=44803929<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Mystery of what killed billions of starfish solved, say scientists",
-    "pubDate": "Tue Aug 05 20:37:03 UTC 2025"
-  },
-  {
-    "link": "https://media.defense.gov/2025/Aug/05/2003773004/-1/-1/0/SUBMERSIBLE%20TITAN%20MBI%20REPORT%20(04AUG2025).PDF",
-    "description": "\n<p>Article URL: <a href=\"https://media.defense.gov/2025/Aug/05/2003773004/-1/-1/0/SUBMERSIBLE%20TITAN%20MBI%20REPORT%20(04AUG2025).PDF\">https://media.defense.gov/2025/Aug/05/2003773004/-1/-1/0/SUBMERSIBLE%20TITAN%20MBI%20REPORT%20(04AUG2025).PDF<\/a><\/p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803896\">https://news.ycombinator.com/item?id=44803896<\/a><\/p>\n<p>Points: 2<\/p>\n<p># Comments: 0<\/p>\n",
-    "title": "Marine Board of Investigation Report on the Implosion of the Submersible Titan [pdf]",
-    "pubDate": "Tue Aug 05 20:33:41 UTC 2025"
-  },
-  {
-    "link": "https://github.com/mmargenot/tezcat",
-    "description": "\n<p>Tezcat is a POC implementation of a remembrance agent (<a href=\"https://www.bradleyrhodes.com/Papers/remembrance.html\" rel=\"nofollow\">https://www.bradleyrhodes.com/Papers/remembrance.html<\/a>) in Obsidian. It uses text embeddings and vector similarity search (or hybrid search) to do recall of fragments of notes that you've written in the past based on what you're writing right now.<p>I don't like AI chat interfaces in knowledge management tools and I have been looking to implement something that would integrate better with the flow of actually writing. This operates best with Ollama on your machine, for a local-first experience, but can work with OpenAI embeddings.<p>Try it out and let me know what you think!<\/p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=44803892\">https://news.ycombinator.com/item?id=44803892<\/a><\/p>\n<p>Points: 4<\/p>\n<p># Comments: 1<\/p>\n",
-    "title": "Show HN: Tezcat \u2013 local-first AI recall in Obsidian via a remembrance agent",
-    "pubDate": "Tue Aug 05 20:33:27 UTC 2025"
   },
   {
     "link": "https://dev.to/andres_ortiz_c410e5f78515/puede-un-dispositivo-iot-amplificar-un-ritual-amoroso-4nk",

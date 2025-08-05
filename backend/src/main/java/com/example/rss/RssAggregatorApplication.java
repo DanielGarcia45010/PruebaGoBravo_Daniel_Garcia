@@ -2,9 +2,12 @@ package com.example.rss;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling // 
 public class RssAggregatorApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(RssAggregatorApplication.class, args);
     }

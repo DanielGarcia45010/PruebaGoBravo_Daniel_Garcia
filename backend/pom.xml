@@ -19,19 +19,21 @@
   </properties>
 
   <dependencies>
-    <!-- Spring Boot core -->
+    <!-- Spring Boot starter -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
+      <version>${spring.boot.version}</version>
     </dependency>
 
     <!-- Jackson para JSON -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
+      <version>2.15.2</version>
     </dependency>
 
-    <!-- Rome para leer feeds RSS -->
+    <!-- Rome para feeds RSS -->
     <dependency>
       <groupId>com.rometools</groupId>
       <artifactId>rome</artifactId>
@@ -45,6 +47,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
       </plugin>
     </plugins>
   </build>

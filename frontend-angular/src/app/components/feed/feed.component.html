@@ -1,0 +1,18 @@
+<div *ngFor="let entry of entries" class="card mb-3" [class.visited]="entry.visited">
+  <div class="row g-0">
+    <div class="col-md-2" *ngIf="entry.imageUrl">
+      <img [src]="entry.imageUrl" class="img-fluid rounded-start" style="max-height: 150px;" />
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <a [href]="entry.link" target="_blank">
+          <h5 class="card-title" (click)="entry.visited = true">{{ entry.title }}</h5>
+        </a>
+        <p class="card-text" (click)="toggle(entry)">
+          {{ entry.expanded ? entry.content : entry.summary }}
+        </p>
+        <p class="card-text"><small class="text-muted">{{ entry.published }}</small></p>
+      </div>
+    </div>
+  </div>
+</div>

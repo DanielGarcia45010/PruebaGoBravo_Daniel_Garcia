@@ -1,9 +1,8 @@
 export interface FeedEntry {
   title: string;
   link: string;
-  description: string; 
+  description: string;
   pubDate: string;
   visited?: boolean;
   expanded?: boolean;
 }
-

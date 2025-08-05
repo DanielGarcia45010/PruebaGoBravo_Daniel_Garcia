@@ -1,16 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FeedService } from '../../services/feed.service';
-
-interface FeedEntry {
-  title: string;
-  link: string;
-  contentSnippet: string;
-  content: string;
-  isoDate: string;
-  image?: string;
-  expanded?: boolean;
-  visited?: boolean;
-}
+import { FeedService } from 'src/app/services/feed.service';
+import { FeedEntry } from 'src/app/models/feed-entry.model';
 
 @Component({
   selector: 'app-feed',
@@ -22,32 +12,23 @@ export class FeedComponent implements OnInit {
 
   constructor(private feedService: FeedService) {}
 
- ngOnInit(): void {
-  this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
-    this.entries = data
-      .map(entry => ({
-        ...entry,
-        visited: false,
-        expanded: false
-      }))
-      .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-  });
-}
-
-
-  toggleContent(entry: FeedEntry): void {
-    entry.expanded = !entry.expanded;
-  }
-
-  markAsVisited(entry: FeedEntry): void {
-    entry.visited = true;
+  ngOnInit(): void {
+    this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
+      this.entries = data
+        .map(entry => ({
+          ...entry,
+          visited: false,
+          expanded: false
+        }))
+        .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    });
   }
 
   stripHtml(html: string): string {
-  const tmp = document.createElement('div');
-  tmp.innerHTML = html;
-  return tmp.textContent || tmp.innerText || '';
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+  }
 }
 
-}
 

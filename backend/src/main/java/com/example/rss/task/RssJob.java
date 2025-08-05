@@ -13,8 +13,9 @@ public class RssJob {
         this.rssAggregatorService = rssAggregatorService;
     }
 
+    // Ejecuta cada 24 horas (86.400.000 ms)
     @Scheduled(fixedRate = 86400000)
-    public void runJob() {
+    public void fetchFeeds() {
         rssAggregatorService.fetchAndStoreFeeds();
     }
 }

@@ -17,18 +17,27 @@ export class FeedComponent implements OnInit {
   this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
   this.entries = data
     .map(entry => {
-     
       const parser = new DOMParser();
       const doc = parser.parseFromString(entry.description || '', 'text/html');
-      const textContent = doc.body.textContent?.trim() || '';
-      const summary = textContent.slice(0, 200); 
+      
+      // Quitar texto técnico del contenido
+      const cleanedText = doc.body.textContent
+        ?.replace(/Article URL:.*/gi, '')
+        .replace(/Comments URL:.*/gi, '')
+        .replace(/Points:.*/gi, '')
+        .replace(/# Comments:.*/gi, '')
+        .trim() || '';
 
+      const summary = cleanedText.slice(0, 200); // un párrafo breve
+
+      // Extraer imagen si existe
       const imgEl = doc.querySelector('img');
       const image = imgEl ? imgEl.src : null;
 
       return {
         ...entry,
         summary,
+        cleanedDescription: cleanedText,
         image,
         visited: false,
         expanded: false

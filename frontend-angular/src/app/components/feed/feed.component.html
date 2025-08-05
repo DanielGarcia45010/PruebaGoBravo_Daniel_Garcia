@@ -1,7 +1,13 @@
 <div class="feed-container">
   <div class="entry" *ngFor="let entry of entries" (click)="entry.expanded = !entry.expanded">
     <h3>
-      <a [href]="entry.link" target="_blank" (click)="entry.visited = true" [class.visited]="entry.visited">
+      <a 
+        [href]="entry.link" 
+        target="_blank" 
+        (click)="entry.visited = true" 
+        [class.visited]="entry.visited"
+        (mousedown)="$event.stopPropagation()"
+      >
         {{ entry.title }}
       </a>
     </h3>
@@ -14,7 +20,7 @@
     </div>
 
     <div *ngIf="entry.expanded" class="entry-full">
-      <div [innerHTML]="entry.description"></div>
+      <p>{{ entry.cleanedDescription }}</p>
     </div>
   </div>
 </div>

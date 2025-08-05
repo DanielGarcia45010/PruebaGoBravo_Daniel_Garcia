@@ -18,9 +18,9 @@ import java.util.*;
 public class RssAggregatorService {
 
     private static final List<String> FEED_URLS = Arrays.asList(
-        "https://dev.to/feed/tag/javascript",
-        "https://hnrss.org/newest",
-        "https://www.genbeta.com/feedburner.xml"
+            "https://dev.to/feed/tag/javascript",
+            "https://hnrss.org/newest",
+            "https://www.genbeta.com/feedburner.xml"
     );
 
     @PostConstruct
@@ -37,7 +37,7 @@ public class RssAggregatorService {
                 SyndFeed feed = input.build(new XmlReader(new URL(url)));
                 allEntries.addAll(feed.getEntries());
             } catch (Exception e) {
-                System.err.println("Error leyendo fuente: " + url);
+                System.err.println("❌ Error leyendo fuente: " + url);
                 e.printStackTrace();
             }
         }
@@ -70,6 +70,7 @@ public class RssAggregatorService {
             file.close();
             System.out.println("✅ Archivo entries.json generado correctamente.");
         } catch (Exception e) {
+            System.err.println("❌ Error al escribir entries.json");
             e.printStackTrace();
         }
     }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FeedService } from '../../services/feed.service';
 import { FeedEntry } from '../../models/feed-entry.model';
 
-
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
@@ -14,44 +13,43 @@ export class FeedComponent implements OnInit {
   constructor(private feedService: FeedService) {}
 
   ngOnInit(): void {
-  this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
-  this.entries = data
-    .map(entry => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(entry.description || '', 'text/html');
-      
-      // Quitar texto técnico del contenido
-      const cleanedText = doc.body.textContent
-        ?.replace(/Article URL:.*/gi, '')
-        .replace(/Comments URL:.*/gi, '')
-        .replace(/Points:.*/gi, '')
-        .replace(/# Comments:.*/gi, '')
-        .trim() || '';
+    this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
+      this.entries = data
+        .map(entry => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(entry.description || '', 'text/html');
 
-      const summary = cleanedText.slice(0, 200); // un párrafo breve
+          const text = doc.body.textContent || '';
 
-      // Extraer imagen si existe
-      const imgEl = doc.querySelector('img');
-      const image = imgEl ? imgEl.src : null;
+          // Buscar contenido visible y eliminar etiquetas técnicas
+          const cleanedText = text
+            .replace(/Article URL:.*/gi, '')
+            .replace(/Comments URL:.*/gi, '')
+            .replace(/Points:.*/gi, '')
+            .replace(/# Comments:.*/gi, '')
+            .trim();
 
-      return {
-        ...entry,
-        summary,
-        cleanedDescription: cleanedText,
-        image,
-        visited: false,
-        expanded: false
-      };
-    })
-    .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-});
-  }
+          // Si el texto limpio es muy corto, usar comentarios o fecha
+          let summary = cleanedText.length > 40 ? cleanedText.slice(0, 200) : '';
+          if (!summary) {
+            const commentsMatch = text.match(/# Comments: \d+/i);
+            const comments = commentsMatch ? commentsMatch[0] : '';
+            summary = `${comments} · ${entry.pubDate}`;
+          }
 
-  stripHtml(html: string): string {
-    const tmp = document.createElement('div');
-    tmp.innerHTML = html;
-    return tmp.textContent || tmp.innerText || '';
+          const imgEl = doc.querySelector('img');
+          const image = imgEl ? imgEl.src : null;
+
+          return {
+            ...entry,
+            summary,
+            cleanedDescription: cleanedText,
+            image,
+            visited: false,
+            expanded: false
+          };
+        })
+        .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    });
   }
 }
-
-

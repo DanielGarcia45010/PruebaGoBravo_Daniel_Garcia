@@ -1,13 +1,23 @@
-<div class="feed-container" *ngIf="entries.length > 0; else loading">
-  <div *ngFor="let entry of entries" class="feed-card">
-    <h3>{{ entry.title }}</h3>
-    <img *ngIf="entry.image" [src]="entry.image" alt="Feed image" />
-    <p [innerHTML]="entry.description"></p>
-    <small>{{ entry.pubDate }}</small><br>
-    <a [href]="entry.link" target="_blank">Leer más</a>
+<!-- src/app/components/feed/feed.component.html -->
+<div class="feed-container">
+  <div *ngFor="let entry of entries" class="feed-entry" [class.visited]="isVisited(entry.link)">
+    <div class="entry-header">
+      <a 
+        [href]="entry.link" 
+        target="_blank" 
+        (click)="markAsVisited(entry.link)"
+        class="entry-title"
+      >
+        {{ entry.title }}
+      </a>
+    </div>
+
+    <div class="entry-content" (click)="toggleContent(entry)">
+      <div *ngIf="entry.imageUrl" class="image-preview">
+        <img [src]="entry.imageUrl" alt="Preview" />
+      </div>
+      <p *ngIf="expandedEntry !== entry">{{ entry.contentSnippet }}</p>
+      <div *ngIf="expandedEntry === entry" [innerHTML]="entry.content"></div>
+    </div>
   </div>
 </div>
-
-<ng-template #loading>
-  <p>Cargando entradas...</p>
-</ng-template>

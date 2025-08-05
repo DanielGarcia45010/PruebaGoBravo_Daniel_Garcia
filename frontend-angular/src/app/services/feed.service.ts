@@ -7,11 +7,11 @@ import { FeedEntry } from '../models/feed-entry.model';
   providedIn: 'root'
 })
 export class FeedService {
-  private jsonUrl = '/entries.json';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  getFeed(): Observable<FeedEntry[]> {
-    return this.http.get<FeedEntry[]>(this.jsonUrl);
+  getFeedEntries(): Observable<FeedEntry[]> {
+    return this.http.get<FeedEntry[]>('/entries.json');
   }
 }
+

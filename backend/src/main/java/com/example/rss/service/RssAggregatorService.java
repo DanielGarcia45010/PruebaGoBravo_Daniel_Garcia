@@ -3,11 +3,8 @@ package com.example.rss.service;
 import com.rometools.rome.feed.synd.*;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.io.FileWriter;
 import java.net.URL;
 import java.nio.file.Files;
@@ -18,15 +15,10 @@ import java.util.*;
 public class RssAggregatorService {
 
     private static final List<String> FEED_URLS = Arrays.asList(
-            "https://dev.to/feed/tag/javascript",
-            "https://hnrss.org/newest",
-            "https://www.genbeta.com/feedburner.xml"
+        "https://dev.to/feed/tag/javascript",
+        "https://hnrss.org/newest",
+        "https://www.genbeta.com/feedburner.xml"
     );
-
-    @PostConstruct
-    public void init() {
-        fetchAndStoreFeeds();
-    }
 
     public void fetchAndStoreFeeds() {
         List<SyndEntry> allEntries = new ArrayList<>();
@@ -37,7 +29,7 @@ public class RssAggregatorService {
                 SyndFeed feed = input.build(new XmlReader(new URL(url)));
                 allEntries.addAll(feed.getEntries());
             } catch (Exception e) {
-                System.err.println("❌ Error leyendo fuente: " + url);
+                System.err.println("Error leyendo fuente: " + url);
                 e.printStackTrace();
             }
         }
@@ -48,9 +40,9 @@ public class RssAggregatorService {
             return dateB.compareTo(dateA);
         });
 
-        JSONArray jsonArray = new JSONArray();
+        List<Map<String, Object>> jsonEntries = new ArrayList<>();
         for (SyndEntry entry : allEntries) {
-            JSONObject obj = new JSONObject();
+            Map<String, Object> obj = new HashMap<>();
             obj.put("title", entry.getTitle());
             obj.put("link", entry.getLink());
             obj.put("pubDate", entry.getPublishedDate() != null ? entry.getPublishedDate().toString() : "");
@@ -60,17 +52,16 @@ public class RssAggregatorService {
                 obj.put("image", entry.getEnclosures().get(0).getUrl());
             }
 
-            jsonArray.put(obj);
+            jsonEntries.add(obj);
         }
 
         try {
             Files.createDirectories(Paths.get("src/main/resources/static"));
             FileWriter file = new FileWriter("src/main/resources/static/entries.json");
-            file.write(jsonArray.toString(2));
+            file.write(new com.fasterxml.jackson.databind.ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(jsonEntries));
             file.close();
             System.out.println("✅ Archivo entries.json generado correctamente.");
         } catch (Exception e) {
-            System.err.println("❌ Error al escribir entries.json");
             e.printStackTrace();
         }
     }

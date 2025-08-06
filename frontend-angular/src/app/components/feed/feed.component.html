@@ -1,22 +1,20 @@
-<div class="header">
+<div class="header" style="text-align: center;">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
-  <h1 class="page-title"> Lector de Noticias GoBravo</h1>
+  <h1 class="page-title">Lector de Noticias GoBravo</h1>
 </div>
 
 <div class="feed-container">
   <div 
     class="entry" 
     *ngFor="let entry of entries" 
-    (click)="entry.expanded = !entry.expanded"
+    (click)="toggleExpand(entry)" 
     [class.visited-bg]="entry.visited"
   >
     <h3>
       <a 
-        [href]="entry.link" 
-        target="_blank" 
-        (click)="entry.visited = true" 
+        href="#" 
+        (click)="onLinkClick(entry, $event)" 
         [class.visited]="entry.visited"
-        (mousedown)="$event.stopPropagation()"
       >
         {{ entry.title }}
       </a>
@@ -25,7 +23,7 @@
 
     <div class="entry-content">
       <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
-      
+
       <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
       </p>

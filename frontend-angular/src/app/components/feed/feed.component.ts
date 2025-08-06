@@ -18,10 +18,8 @@ export class FeedComponent implements OnInit {
         .map(entry => {
           const parser = new DOMParser();
           const doc = parser.parseFromString(entry.description || '', 'text/html');
-
           const text = doc.body.textContent || '';
 
-          // Buscar contenido visible y eliminar etiquetas técnicas
           const cleanedText = text
             .replace(/Article URL:.*/gi, '')
             .replace(/Comments URL:.*/gi, '')
@@ -29,11 +27,8 @@ export class FeedComponent implements OnInit {
             .replace(/# Comments:.*/gi, '')
             .trim();
 
-          // Si el texto limpio es muy corto, usar fecha
           let summary = cleanedText.length > 40 ? cleanedText.slice(0, 200) : '';
-          if (!summary) {
-            summary = `${entry.pubDate}`;
-          }
+          if (!summary) summary = `${entry.pubDate}`;
 
           const imgEl = doc.querySelector('img');
           const image = imgEl ? imgEl.src : null;
@@ -49,5 +44,15 @@ export class FeedComponent implements OnInit {
         })
         .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
     });
+  }
+
+  onLinkClick(entry: FeedEntry, event: MouseEvent): void {
+    event.stopPropagation(); // Evita que se expanda al hacer click en el link
+    entry.visited = true;
+    window.open(entry.link, '_blank');
+  }
+
+  toggleExpand(entry: FeedEntry): void {
+    entry.expanded = !entry.expanded;
   }
 }

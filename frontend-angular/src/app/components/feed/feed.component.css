@@ -19,7 +19,7 @@
 /* Entry cards */
 .entry {
   background-color: #d6d6d6;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -42,12 +42,12 @@
 
 .entry h3 a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: color 0.2s;
 }
 
 .entry h3 a:hover {
-  color: #eeeeee;
+  color: #000000;
 }
 
 .entry h3 a.visited {
@@ -57,7 +57,7 @@
 .visited-label {
   font-size: 12px;
   background-color: #fff;
-  color: #868686;
+  color: #000000;
   border-radius: 6px;
   padding: 4px 8px;
   margin-left: 10px;
@@ -68,7 +68,7 @@
 .entry-date {
   font-size: 16px;
   margin-top: 10px;
-  color: #f0f0f0;
+  color: #000000;
 }
 
 .entry-image {

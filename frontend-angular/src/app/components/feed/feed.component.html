@@ -1,15 +1,15 @@
 <div class="header">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
-  <h1 class="page-title">Agregador de Noticias - Daniel Garcia - GoBravo</h1>
+  <h1 class="page-title">Lector de Noticias GoBravo</h1>
 </div>
 
-<!-- 🔍 Buscador -->
-<div class="search-bar">
+<div class="search-container">
+  <span class="search-icon">🔍</span>
   <input 
     type="text" 
     [(ngModel)]="searchTerm" 
-    placeholder="Buscar por título o contenido..." 
-    class="search-input"
+    placeholder="Buscar noticias..." 
+    class="search-bar"
   />
 </div>
 

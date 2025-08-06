@@ -72,18 +72,27 @@
 }
 
 .search-container {
+  width: 100%;
   text-align: center;
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-input {
+.search-icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.search-bar {
   width: 60%;
+  max-width: 500px;
   padding: 10px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid #ccc;
 }
-
 
 .entry-image {
   width: 150px;

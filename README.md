@@ -47,8 +47,9 @@ Este proyecto es un **agregador de fuentes RSS** que combina entradas de múltip
 - Git
 
 ### 1. Correr el backend
-mvnw.cmd clean install
-mvnw.cmd spring-boot:run
+mvn clean install
+mvn spring-boot:run
+
 
 ### 2. Correr el frontend
 cd frontend

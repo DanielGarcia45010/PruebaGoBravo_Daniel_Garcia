@@ -19,7 +19,7 @@ public class RssAggregatorService {
         "https://hnrss.org/newest",
         "https://www.genbeta.com/feedburner.xml"
     );
-
+    @Scheduled(cron = "0 0 0 * * ?")
     public void fetchAndStoreFeeds() {
         List<SyndEntry> allEntries = new ArrayList<>();
 

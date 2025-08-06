@@ -32,9 +32,7 @@ export class FeedComponent implements OnInit {
           // Si el texto limpio es muy corto, usar comentarios o fecha
           let summary = cleanedText.length > 40 ? cleanedText.slice(0, 200) : '';
           if (!summary) {
-            const commentsMatch = text.match(/# Comments: \d+/i);
-            const comments = commentsMatch ? commentsMatch[0] : '';
-            summary = `${comments} · ${entry.pubDate}`;
+            summary = `${entry.pubDate}`;
           }
 
           const imgEl = doc.querySelector('img');

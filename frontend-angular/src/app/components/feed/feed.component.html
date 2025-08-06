@@ -1,5 +1,15 @@
+<div class="header">
+  <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
+  <h1 class="page-title">Agregador de Noticias Bravo</h1>
+</div>
+
 <div class="feed-container">
-  <div class="entry" *ngFor="let entry of entries" (click)="entry.expanded = !entry.expanded">
+  <div 
+    class="entry" 
+    *ngFor="let entry of entries" 
+    (click)="entry.expanded = !entry.expanded"
+    [class.visited-bg]="entry.visited"
+  >
     <h3>
       <a 
         [href]="entry.link" 
@@ -10,13 +20,17 @@
       >
         {{ entry.title }}
       </a>
+      <span *ngIf="entry.visited" class="visited-label">Visitado recientemente</span>
     </h3>
 
     <div class="entry-content">
       <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
-      <p class="entry-summary">
+      <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
       </p>
+      <ng-template #dateOnly>
+        <p class="entry-date">Publicado: {{ entry.pubDate | date }}</p>
+      </ng-template>
     </div>
 
     <div *ngIf="entry.expanded" class="entry-full">

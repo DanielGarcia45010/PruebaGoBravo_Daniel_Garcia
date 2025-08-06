@@ -47,14 +47,17 @@ Este proyecto es un **agregador de fuentes RSS** que combina entradas de múltip
 - Git
 
 ### 1. Correr el backend
-mvn clean install
-mvn spring-boot:run
+- cd backend
+- mvn clean install
+- mvn spring-boot:run
 
 
 ### 2. Correr el frontend
-cd frontend
-npm install
-ng serve
+- abrir un nuevo terminal
+- cd frontend-angular
+- npm install
+- npm install -g @angular/cli
+- ng serve
 
 
 Desarrollado por: Daniel Garcia

@@ -4,6 +4,8 @@ import com.rometools.rome.feed.synd.*;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
 import org.springframework.stereotype.Service;
+import org.springframework.scheduling.annotation.Scheduled;
+
 
 import java.io.FileWriter;
 import java.net.URL;

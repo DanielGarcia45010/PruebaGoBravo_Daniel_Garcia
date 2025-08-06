@@ -1,6 +1,6 @@
 <div class="header">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
-  <h1 class="page-title">Agregador de Noticias Bravo</h1>
+  <h1 class="page-title">Agregador de Noticias - Daniel Garcia - GoBravo </h1>
 </div>
 
 <div class="feed-container">
@@ -25,9 +25,11 @@
 
     <div class="entry-content">
       <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
+      
       <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
       </p>
+
       <ng-template #dateOnly>
         <p class="entry-date">Publicado: {{ entry.pubDate | date }}</p>
       </ng-template>

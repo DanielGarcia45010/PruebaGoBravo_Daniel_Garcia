@@ -1,88 +1,70 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f3f4f6;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #004f9e;
-  color: white;
-  padding: 1rem;
-}
-
-.logo {
-  height: 50px;
-  margin-right: 1rem;
-}
-
-.page-title {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
+/* feed.component.css */
 .feed-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
+/* Entry cards */
 .entry {
-  background-color: white;
+  background-color: #B272D9; /* magenta como la V morada */
+  color: white;
   border-radius: 12px;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.3s;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
-.entry.visited-bg {
-  background-color: #e6f0ff;
+.entry:hover {
+  transform: scale(1.01);
 }
 
 .entry h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
+  margin-top: 0;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 18px;
 }
 
-.entry a {
-  color: #004f9e;
+.entry h3 a {
   text-decoration: none;
-  font-weight: 600;
+  color: white;
+  transition: color 0.2s;
 }
 
-.entry a.visited {
-  color: #888;
+.entry h3 a:hover {
+  color: #eeeeee;
+}
+
+.entry h3 a.visited {
+  color: #cccccc;
 }
 
 .visited-label {
-  background-color: #d1e3ff;
-  color: #004f9e;
-  font-size: 0.75rem;
-  margin-left: 0.5rem;
-  padding: 2px 6px;
-  border-radius: 8px;
+  font-size: 12px;
+  background-color: #fff;
+  color: #B272D9;
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-left: 10px;
 }
 
 .entry-summary,
+.entry-full,
 .entry-date {
-  font-size: 0.95rem;
-  color: #333;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #f0f0f0;
 }
 
 .entry-image {
+  width: 150px;
+  height: auto;
   max-height: 150px;
-  width: auto;
-  display: block;
-  margin-bottom: 0.5rem;
+  object-fit: cover;
   border-radius: 8px;
-}
-
-.entry-full {
-  margin-top: 1rem;
-  color: #444;
+  margin: 10px 0;
 }

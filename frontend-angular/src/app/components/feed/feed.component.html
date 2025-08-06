@@ -1,20 +1,32 @@
-<div class="header" style="text-align: center;">
+<div class="header">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
   <h1 class="page-title">Lector de Noticias GoBravo</h1>
 </div>
 
+<div class="search-container">
+  <input
+    type="text"
+    placeholder="Buscar noticias..."
+    [(ngModel)]="searchTerm"
+    class="search-input"
+  />
+  <span class="search-icon">🔍</span>
+</div>
+
 <div class="feed-container">
-  <div 
-    class="entry" 
-    *ngFor="let entry of entries" 
-    (click)="toggleExpand(entry)" 
+  <div
+    class="entry"
+    *ngFor="let entry of filteredEntries"
+    (click)="toggleExpanded(entry)"
     [class.visited-bg]="entry.visited"
   >
     <h3>
-      <a 
-        href="#" 
-        (click)="onLinkClick(entry, $event)" 
+      <a
+        [href]="entry.link"
+        target="_blank"
+        (click)="markAsVisited(entry)"
         [class.visited]="entry.visited"
+        (mousedown)="$event.stopPropagation()"
       >
         {{ entry.title }}
       </a>
@@ -22,7 +34,12 @@
     </h3>
 
     <div class="entry-content">
-      <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
+      <img
+        *ngIf="entry.image"
+        [src]="entry.image"
+        alt="Preview"
+        class="entry-image"
+      />
 
       <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>

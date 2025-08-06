@@ -1,13 +1,14 @@
 <div class="header">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
-  <h1 class="page-title" style="text-align: center;">Agregador de Noticias - Daniel Garcia - GoBravo</h1>
+  <h1 class="page-title">Agregador de Noticias - Daniel Garcia - GoBravo</h1>
 </div>
 
-<div class="search-container">
+<!-- 🔍 Buscador -->
+<div class="search-bar">
   <input 
     type="text" 
-    placeholder="Buscar Noticias..." 
     [(ngModel)]="searchTerm" 
+    placeholder="Buscar por título o contenido..." 
     class="search-input"
   />
 </div>
@@ -15,7 +16,7 @@
 <div class="feed-container">
   <div 
     class="entry" 
-    *ngFor="let entry of entries" 
+    *ngFor="let entry of filteredEntries" 
     (click)="entry.expanded = !entry.expanded"
     [class.visited-bg]="entry.visited"
   >
@@ -33,21 +34,12 @@
     </h3>
 
     <div class="entry-content">
-      <!-- Mostrar imagen si existe -->
-      <img 
-        *ngIf="entry.image" 
-        [src]="entry.image" 
-        alt="Preview" 
-        class="entry-image" 
-        style="max-height: 150px; max-width: 100%; margin-bottom: 8px;"
-      />
-
-      <!-- Mostrar resumen si existe -->
+      <img *ngIf="entry.image" [src]="entry.image" alt="Preview" class="entry-image" />
+      
       <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
       </p>
 
-      <!-- Mostrar fecha si no hay resumen -->
       <ng-template #dateOnly>
         <p class="entry-date">Publicado: {{ entry.pubDate | date }}</p>
       </ng-template>

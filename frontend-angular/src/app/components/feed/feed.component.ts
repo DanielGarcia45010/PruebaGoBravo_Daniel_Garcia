@@ -13,12 +13,6 @@ export class FeedComponent implements OnInit {
 
   constructor(private feedService: FeedService) {}
 
-  get filteredEntries(): FeedEntry[] {
-    return this.entries.filter(entry =>
-      entry.title.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );
-  }
-
   ngOnInit(): void {
     this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
       this.entries = data
@@ -27,7 +21,6 @@ export class FeedComponent implements OnInit {
           const doc = parser.parseFromString(entry.description || '', 'text/html');
 
           const text = doc.body.textContent || '';
-
           const cleanedText = text
             .replace(/Article URL:.*/gi, '')
             .replace(/Comments URL:.*/gi, '')
@@ -55,5 +48,12 @@ export class FeedComponent implements OnInit {
         .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
     });
   }
-}
 
+  get filteredEntries(): FeedEntry[] {
+    const term = this.searchTerm.toLowerCase();
+    return this.entries.filter(entry =>
+      entry.title.toLowerCase().includes(term) ||
+      entry.cleanedDescription.toLowerCase().includes(term)
+    );
+  }
+}

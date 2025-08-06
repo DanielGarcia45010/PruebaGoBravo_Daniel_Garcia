@@ -71,6 +71,20 @@
   color: #0056a3;
 }
 
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+
 .entry-image {
   width: 150px;
   height: auto;

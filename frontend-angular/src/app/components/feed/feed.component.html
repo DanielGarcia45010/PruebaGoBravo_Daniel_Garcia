@@ -3,6 +3,15 @@
   <h1 class="page-title" style="text-align: center;">Agregador de Noticias - Daniel Garcia - GoBravo</h1>
 </div>
 
+<div class="search-container">
+  <input 
+    type="text" 
+    placeholder="Buscar Noticias..." 
+    [(ngModel)]="searchTerm" 
+    class="search-input"
+  />
+</div>
+
 <div class="feed-container">
   <div 
     class="entry" 
@@ -44,7 +53,6 @@
       </ng-template>
     </div>
 
-    <!-- Mostrar contenido completo si expandido -->
     <div *ngIf="entry.expanded" class="entry-full">
       <p>{{ entry.cleanedDescription }}</p>
     </div>

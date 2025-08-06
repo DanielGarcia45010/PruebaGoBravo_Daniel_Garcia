@@ -1,0 +1,28 @@
+<div class="header">
+  <h1>Agregador de Noticias RSS</h1>
+</div>
+
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Buscar noticias..."
+    class="search-input"
+  />
+</div>
+
+<div class="feed-container">
+  <div
+    class="entry"
+    *ngFor="let entry of filteredEntries()"
+    (click)="toggleEntry(entry)"
+    [class.visited]="entry.visited"
+  >
+    <h2><a [href]="entry.link" target="_blank">{{ entry.title }}</a></h2>
+    <div class="image" *ngIf="entry.image">
+      <img [src]="entry.image" alt="Imagen destacada" />
+    </div>
+    <p *ngIf="!entry.expanded">{{ entry.summary }}</p>
+    <p *ngIf="entry.expanded">{{ entry.fullContent }}</p>
+  </div>
+</div>

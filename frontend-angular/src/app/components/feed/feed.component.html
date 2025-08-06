@@ -1,30 +1,20 @@
 <div class="header">
   <img src="assets/logotipo_bravo.png" alt="Bravo Logo" class="logo" />
-  <h1 class="page-title">Lector de Noticias GoBravo</h1>
-</div>
-
-<div class="search-container">
-  <input
-    type="text"
-    placeholder="Buscar noticias..."
-    [(ngModel)]="searchTerm"
-    class="search-input"
-  />
-  <span class="search-icon">🔍</span>
+  <h1 class="page-title" style="text-align: center;">Agregador de Noticias - Daniel Garcia - GoBravo</h1>
 </div>
 
 <div class="feed-container">
-  <div
-    class="entry"
-    *ngFor="let entry of filteredEntries"
-    (click)="toggleExpanded(entry)"
+  <div 
+    class="entry" 
+    *ngFor="let entry of entries" 
+    (click)="entry.expanded = !entry.expanded"
     [class.visited-bg]="entry.visited"
   >
     <h3>
-      <a
-        [href]="entry.link"
-        target="_blank"
-        (click)="markAsVisited(entry)"
+      <a 
+        [href]="entry.link" 
+        target="_blank" 
+        (click)="entry.visited = true" 
         [class.visited]="entry.visited"
         (mousedown)="$event.stopPropagation()"
       >
@@ -34,22 +24,27 @@
     </h3>
 
     <div class="entry-content">
-      <img
-        *ngIf="entry.image"
-        [src]="entry.image"
-        alt="Preview"
-        class="entry-image"
+      <!-- Mostrar imagen si existe -->
+      <img 
+        *ngIf="entry.image" 
+        [src]="entry.image" 
+        alt="Preview" 
+        class="entry-image" 
+        style="max-height: 150px; max-width: 100%; margin-bottom: 8px;"
       />
 
+      <!-- Mostrar resumen si existe -->
       <p class="entry-summary" *ngIf="entry.summary; else dateOnly">
         {{ entry.summary }}<span *ngIf="!entry.expanded">...</span>
       </p>
 
+      <!-- Mostrar fecha si no hay resumen -->
       <ng-template #dateOnly>
         <p class="entry-date">Publicado: {{ entry.pubDate | date }}</p>
       </ng-template>
     </div>
 
+    <!-- Mostrar contenido completo si expandido -->
     <div *ngIf="entry.expanded" class="entry-full">
       <p>{{ entry.cleanedDescription }}</p>
     </div>

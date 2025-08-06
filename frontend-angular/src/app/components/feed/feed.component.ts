@@ -1,49 +1,71 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-interface Entry {
-  title: string;
-  link: string;
-  summary: string;
-  pubDate: string;
-  cleanedDescription: string;
-  image?: string;
-  visited?: boolean;
-  expanded?: boolean;
-}
+import { FeedService } from '../../services/feed.service';
+import { FeedEntry } from '../../models/feed-entry.model';
 
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.css'],
+  styleUrls: ['./feed.component.css']
 })
 export class FeedComponent implements OnInit {
-  entries: Entry[] = [];
+  entries: FeedEntry[] = [];
+  filteredEntries: FeedEntry[] = [];
   searchTerm: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private feedService: FeedService) {}
 
   ngOnInit(): void {
-    this.http.get<Entry[]>('/api/entries.json').subscribe((data) => {
-      this.entries = data.map((entry) => ({
-        ...entry,
-        visited: false,
-        expanded: false,
-      }));
+    this.feedService.getFeedEntries().subscribe((data: FeedEntry[]) => {
+      this.entries = data.map(entry => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(entry.description || '', 'text/html');
+
+        const text = doc.body.textContent || '';
+        const cleanedText = text
+          .replace(/Article URL:.*/gi, '')
+          .replace(/Comments URL:.*/gi, '')
+          .replace(/Points:.*/gi, '')
+          .replace(/# Comments:.*/gi, '')
+          .trim();
+
+        let summary = cleanedText.length > 40 ? cleanedText.slice(0, 200) : '';
+        if (!summary) {
+          const commentsMatch = text.match(/# Comments: \d+/i);
+          const comments = commentsMatch ? commentsMatch[0] : '';
+          summary = `${entry.pubDate}`;
+        }
+
+        const imgEl = doc.querySelector('img');
+        const image = imgEl ? imgEl.src : null;
+
+        return {
+          ...entry,
+          summary,
+          cleanedDescription: cleanedText,
+          image,
+          visited: false,
+          expanded: false
+        };
+      }).sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+
+      this.filteredEntries = this.entries;
     });
   }
 
-  get filteredEntries(): Entry[] {
-    return this.entries.filter((entry) =>
-      entry.title.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );
-  }
-
-  markAsVisited(entry: Entry): void {
-    entry.visited = true;
-  }
-
-  toggleExpanded(entry: Entry): void {
+  toggleExpand(entry: FeedEntry): void {
     entry.expanded = !entry.expanded;
+  }
+
+  markVisited(entry: FeedEntry): void {
+    entry.visited = true;
+    window.open(entry.link, '_blank');
+  }
+
+  onSearchChange(): void {
+    const term = this.searchTerm.toLowerCase();
+    this.filteredEntries = this.entries.filter(entry =>
+      entry.title.toLowerCase().includes(term) ||
+      entry.summary?.toLowerCase().includes(term)
+    );
   }
 }

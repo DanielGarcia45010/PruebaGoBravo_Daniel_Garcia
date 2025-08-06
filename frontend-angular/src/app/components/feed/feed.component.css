@@ -24,7 +24,7 @@
 
 .entry h3 a.visited {
   color: gray;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .entry-content {

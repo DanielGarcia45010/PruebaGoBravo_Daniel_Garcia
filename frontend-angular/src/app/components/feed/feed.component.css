@@ -7,7 +7,7 @@
 
 /* Entry cards */
 .entry {
-  background-color: #B272D9; /* magenta como la V morada */
+  background-color: #a5a5a5; 
   color: white;
   border-radius: 12px;
   padding: 20px;
@@ -46,7 +46,7 @@
 .visited-label {
   font-size: 12px;
   background-color: #fff;
-  color: #B272D9;
+  color: #868686;
   border-radius: 6px;
   padding: 4px 8px;
   margin-left: 10px;

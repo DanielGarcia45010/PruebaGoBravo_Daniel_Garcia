@@ -29,7 +29,7 @@ export class FeedComponent implements OnInit {
             .replace(/# Comments:.*/gi, '')
             .trim();
 
-          // Si el texto limpio es muy corto, usar comentarios o fecha
+          // Si el texto limpio es muy corto, usar fecha
           let summary = cleanedText.length > 40 ? cleanedText.slice(0, 200) : '';
           if (!summary) {
             summary = `${entry.pubDate}`;

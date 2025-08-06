@@ -42,22 +42,22 @@
 
 .entry h3 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #0056a3;
   transition: color 0.2s;
 }
 
 .entry h3 a:hover {
-  color: #000000;
+  color: #0056a3;
 }
 
 .entry h3 a.visited {
-  color: #cccccc;
+  color: #ffffff;
 }
 
 .visited-label {
   font-size: 12px;
   background-color: #fff;
-  color: #000000;
+  color: #868686;
   border-radius: 6px;
   padding: 4px 8px;
   margin-left: 10px;
@@ -68,7 +68,7 @@
 .entry-date {
   font-size: 16px;
   margin-top: 10px;
-  color: #000000;
+  color: #0056a3;
 }
 
 .entry-image {
